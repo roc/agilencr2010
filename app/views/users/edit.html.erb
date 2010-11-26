@@ -1,0 +1,56 @@
+<div class="content_left">
+  <div class="innercontent_area">
+	<h2>Edit User - <%= @user.id %></h2>
+	<%= form_for(@user, :html => { :class => "standard" }) do |f| %>
+	  <fieldset class="clearfix">
+
+		<%= render 'error_messages' %>
+
+		<p class="text">
+		  <%= f.label :name, "Name *", :class => "required" %>
+		  <%= f.text_field :name, :class => "text" %>
+		</p>
+
+		<p class="text">
+		  <%= f.label :email, "Email *", :class => "required" %>
+		  <%= f.text_field :email, :class => "text" %>
+		</p>
+
+		  <p class="text">
+			<%= f.label :type %>
+			<%= f.select :user_type, {"Attendee" => "ATTENDEE", "Presenter" => "PRESENTER", "Volunteer" => "VOLUNTEER"} %>
+		  </p>
+
+		<p class="text">
+		  <%= f.label :password, "Password *", :class => "required" %>
+		  <%= f.password_field :password, { :class => "text",  :title => 'Should be atleast 6 characters long' } %>
+		</p>
+
+		<p class="text">
+		  <%= f.label :password_confirmation, "Confirm Password *", :class => "required" %>
+		  <%= f.password_field :password_confirmation, { :class => "text", :title => 'Should be same as the password entered above' } %>
+		</p>
+
+		<p class="submit">
+		  <label for="submit">&nbsp;</label>
+		  <%= f.submit "Update", :class => "btn_submit" %>
+		</p>
+	  </fieldset>
+	<% end %>
+  </div>
+</div>
+<script language="javascript">
+  $(document).ready(function() {
+	// select all desired input fields and attach tooltips to them
+	$("#new_user [name*=password]").tooltip({
+	  // place tooltip on the right edge
+	  position: "center right",
+	  // a little tweaking of the position
+	  offset: [-2, 10],
+	  // use the built-in fadeIn/fadeOut effect
+	  //effect: "fade",
+	  // custom opacity setting
+	  opacity: 0.7
+	});
+  });
+</script>

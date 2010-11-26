@@ -1,0 +1,5 @@
+Your submission titled <b>"<%= @submission.title %>"</b> has the status - <%= @submission.submission_status %>.
+<% if @submission.submission_status != "WITHDRAWN" %>
+	  You can withdraw this submission by clicking <%=  link_to "here", :controller => "submissions", :action => "withdraw", :id => @submission.id %>.
+<% end %>
+

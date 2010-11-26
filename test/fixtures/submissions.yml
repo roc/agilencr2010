@@ -1,0 +1,39 @@
+# == Schema Information
+# Schema version: 20101126054328
+#
+# Table name: submissions
+#
+#  id                :integer         not null, primary key
+#  title             :string(255)
+#  submission_type   :string(255)
+#  abstract          :text
+#  comments          :text
+#  duration          :integer
+#  user_id           :integer
+#  submission_status :string(255)
+#  audience_type     :string(255)
+#  created_at        :datetime
+#  updated_at        :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  submission_type: MyString
+  abstract: MyText
+  comments: MyText
+  duration: 1
+  user_id: 1
+  submission_status: MyString
+  audience_type: MyString
+
+two:
+  title: MyString
+  submission_type: MyString
+  abstract: MyText
+  comments: MyText
+  duration: 1
+  user_id: 1
+  submission_status: MyString
+  audience_type: MyString

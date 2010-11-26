@@ -1,0 +1,49 @@
+<div class="content_left">
+  <div class="innercontent_area">
+	<h2>Session Details</h2>
+	<%= form_for(@submission, :url => user_submissions_path, :html => { :class => "standard" }) do |f| %>
+	  <fieldset class="clearfix">
+		<%= render 'error_messages' %>
+
+		<p class="text">
+		  <%= f.label :title, "Title *", :class => "required" %>
+		  <%= f.text_field :title, :class => "text" %>
+		</p>
+
+		<p class="text">
+		  <%= f.label :type, "Type *", :class => "required" %>
+		  <%= f.select :submission_type, { "Presentation" => "PRESENTATION", "Discussion" => "DISCUSSION", "Workshop" => "WORKSHOP" }, :class => "select_menu" %>
+		</p>
+
+		  <p class="text">
+			<%= f.label :type, "Audience *", :class => "required" %>
+			<%= f.select :audience_type, { "Beginner" => "BEGINNER", "Experienced" => "EXPERIENCED", "Experts" => "EXPERTS" }, :class => "select_menu" %>
+		  </p>
+
+		<p class="text">
+		  <%= f.label :abstract, "Abstract *", :class => "required" %>
+		  <%= f.text_area(:abstract) %>
+		</p>
+
+		<p class="text">
+		  <%= f.label :comments, "Comments", :class => "required" %>
+		  <%= f.text_area :comments %>
+		</p>
+
+		<p class="text">
+		  <%= f.label :duration, "Approx. duration (in minutes) *", :class => "required" %>
+		  <%= f.text_field :duration, :class => "text" %>
+		</p>
+
+		<%= f.hidden_field :submission_status, :value => "Submitted" %>
+
+		<p class="submit">
+		  <label for="submit">&nbsp;</label>
+		  <%= f.submit "Save", :class => "btn_submit" %>
+		</p>
+	  </fieldset>
+	<% end %>
+  </div>
+</div>
+
+

@@ -1,0 +1,28 @@
+<div class="content_left">
+  <%= render"home/left_content" %>
+</div>
+
+<div class="content_right">
+  <%= render"home/right_content" %>
+</div>
+
+<div class="sponsers_area">
+  <%= render"home/sponsors" %>
+</div>
+
+<script type="text/javascript">
+  $(function() {
+	var $buttons = $('div.buttons');
+	$("#browsable").scrollable({circular: true, onBeforeSeek: function(event, index) {
+
+	  }}).navigator();
+	$('.button_green').click(function() {
+	  $("#browsable").scrollable().end();
+	  return false;
+	});
+
+	$('.scrollable_container>.prev,.scrollable_container>.next').bind('selectstart mousedown', function(event) {
+	  event.preventDefault();
+	});
+  });
+</script>

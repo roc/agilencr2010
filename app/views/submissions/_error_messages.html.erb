@@ -1,0 +1,10 @@
+<% if @submission.errors.any? %>
+  <div class="error">
+    <ul>
+      <% @submission.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+

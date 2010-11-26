@@ -1,0 +1,32 @@
+<div class="content_left">
+  <div class="innercontent_area">
+	<h2>Sign in</h2>
+	<%= form_for(:session, :url => sessions_path, :html => { :class => "standard" }) do |f| %>
+	  <fieldset class="clearfix">
+
+		<% flash.each do |key, value| %>
+		  <div class="<%= key %>"><%= value %></div>
+		<% end %>
+
+		<p class="text">
+		  <%= f.label :email, "Email *", :class => "required" %>
+		  <%= f.text_field :email, :class => "text" %>
+		</p>
+
+		<p class="text">
+		  <%= f.label :password, "Password *", :class => "required" %>
+		  <%= f.password_field :password, :class => "text" %>
+		</p>
+
+		<p class="submit">
+		  <label for="submit">&nbsp;</label>
+		  <%= f.submit "Sign in", :class => "btn_submit" %>
+		</p>
+
+		<p class="text">
+			New user? <%= link_to "Sign up now!", signup_path %>
+		</p>
+	  </fieldset>
+	<% end %>
+  </div>
+</div>

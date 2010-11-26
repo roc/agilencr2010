@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>AgileNCR 2011</title>
+	<%= stylesheet_link_tag :all %>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+	<script src="http://cdn.jquerytools.org/1.2.5/tiny/jquery.tools.min.js"></script>
+	<%= javascript_include_tag :all %>
+	<%= csrf_meta_tag %>
+  </head>
+
+  <body>
+	<div class="header">
+	  <%= render "layouts/header" %>
+	</div>
+	
+	<div class="content">
+	  <%= yield %>
+	</div>
+
+	<div class="clr"></div>
+
+	<div class="footer">
+	  <%= render "layouts/footer" %>
+	</div>
+  </body>
+</html>
