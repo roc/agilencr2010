@@ -668,3 +668,13 @@ a.bigButton span {
 a.bigButton:hover span{
 	text-decoration:underline;
 }
+
+.nice-text-green {
+	color: #377720;
+	font-size: 17px;
+}
+
+.nice-text-blue {
+	color: #455373;
+	font-size: 17px;
+}
