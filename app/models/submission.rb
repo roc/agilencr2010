@@ -34,8 +34,8 @@ class Submission < ActiveRecord::Base
 
 	def abstract_should_be_correct_length
 		word_count = abstract.split.length
-		if (word_count < 150 || word_count > 300)
-			errors.add(:abstract, "Abstract should be between 150 to 300 words")
+		if (word_count < 10 || word_count > 300)
+			errors.add(:abstract, "should be between 10 to 300 words")
 		end
 	end
 

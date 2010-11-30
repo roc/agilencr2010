@@ -12,7 +12,7 @@
 
 		<p class="text">
 		  <%= f.label :type, "Type *", :class => "required" %>
-		  <%= f.select :submission_type, { "Presentation" => "PRESENTATION", "Discussion" => "DISCUSSION", "Workshop" => "WORKSHOP" }, :class => "select_menu" %>
+		  <%= f.select :submission_type, { "Presentation" => "PRESENTATION", "Discussion / Open Space" => "DISCUSSION", "Workshop" => "WORKSHOP" }, :class => "select_menu" %>
 		</p>
 
 		  <p class="text">
@@ -22,7 +22,7 @@
 
 		<p class="text">
 		  <%= f.label :abstract, "Abstract *", :class => "required" %>
-		  <%= f.text_area(:abstract) %>
+		  <%= f.text_area(:abstract, {:title => 'Please explain in few words what the session is about and what the audience can gain from it.'}) %>
 		</p>
 
 		<p class="text">
@@ -45,5 +45,20 @@
 	<% end %>
   </div>
 </div>
+<script language="javascript">
+  $(document).ready(function() {
+	// select all desired input fields and attach tooltips to them
+	$("#new_submission [id*=submission_abstract]").tooltip({
+	  // place tooltip on the right edge
+	  position: "center right",
+	  // a little tweaking of the position
+	  offset: [-2, 10],
+	  // use the built-in fadeIn/fadeOut effect
+	  //effect: "fade",
+	  // custom opacity setting
+	  opacity: 0.7
+	});
+  });
+</script>
 
 

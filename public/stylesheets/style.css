@@ -249,7 +249,7 @@ top:134px;
 	font-weight:normal;
 	color:#ffffff;
 	padding-top:16px;
-	padding-left:50px;
+	padding-left:20px;
 }
 .submit_papers_box p {
 	font-size:13px;
@@ -614,6 +614,11 @@ div.field input.text:hover, div.field textarea:hover, form.standard input.text:h
 	background-repeat: no-repeat;
 	background-position: 5px center;
 	width:315px;
+}
+.success {
+	font-weight: bold;
+	background-color: #72FF5C;
+	color: #0E210B;
 }
 .error {
 	color: #D8000C;
