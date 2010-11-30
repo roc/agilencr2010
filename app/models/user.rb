@@ -20,7 +20,7 @@ require 'digest'
 class User < ActiveRecord::Base
 
   attr_accessor :password
-  attr_accessible(:name , :email, :password, :password_confirmation, :user_type)
+  attr_accessible(:name , :email, :password, :password_confirmation, :user_type, :user_organization, :user_phone)
 
   has_many :submissions, :dependent => :destroy
 
@@ -31,7 +31,7 @@ class User < ActiveRecord::Base
   validates :email, :presence => true, :format   => { :with => email_regex }, :uniqueness => { :case_sensitive => false }
 
 	validates :user_organization,  :presence => true, :length   => { :maximum => 50 }
-	validates :user_phone,  :presence => true
+	validates :user_phone,  :presence => true, :numericality => true
 
   # Automatically create the virtual attribute 'password_confirmation'.
   validates :password, :presence => true, :confirmation => true, :length => { :within => 6..40 }

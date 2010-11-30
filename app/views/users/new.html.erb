@@ -16,20 +16,15 @@
 		  <%= f.text_field :email, :class => "text" %>
 		</p>
 
-		  <p class="text">
-			<%= f.label :user_organization, "Organization *", :class => "required" %>
-			<%= f.text_field :user_organization, :class => "text" %>
-		  </p>
+		<p class="text">
+		  <%= f.label :user_organization, "Organization *", :class => "required" %>
+		  <%= f.text_field :user_organization, :class => "text" %>
+		</p>
 
-			<p class="text">
-			  <%= f.label :user_phone, "Phone # *", :class => "required" %>
-			  <%= f.text_field :user_phone, :class => "text" %>
-			</p>
-
-			<p class="text">
-			  <%= f.label :email, "Email *", :class => "required" %>
-			  <%= f.text_field :email, :class => "text" %>
-			</p>
+		<p class="text">
+		  <%= f.label :user_phone, "Phone # *", :class => "required" %>
+		  <%= f.text_field :user_phone, :class => "text" %>
+		</p>
 
 		<p class="text">
 		  <%= f.label :password, "Password *", :class => "required" %>
@@ -41,7 +36,7 @@
 		  <%= f.password_field :password_confirmation, { :class => "text", :title => 'Should be same as the password entered above' } %>
 		</p>
 
-		  <%= f.hidden_field :user_type, :value => "PRESENTER" %>
+		<%= f.hidden_field :user_type, :value => "PRESENTER" %>
 
 		<p class="submit">
 		  <label for="submit">&nbsp;</label>
