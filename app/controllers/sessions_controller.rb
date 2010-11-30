@@ -12,6 +12,7 @@ class SessionsController < ApplicationController
       render 'new'
     else
       session[:current_user_id] = @user.id
+			
       if @user.admin?
         redirect_to users_path
       else

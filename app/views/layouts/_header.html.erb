@@ -2,7 +2,7 @@
 
 <%  if (session[:current_user_id]) %>
   <div class="newsletter">
-	<div class="signup">WELCOME <%= link_to get_user_name(session[:current_user_id]).upcase, user_submissions_path(session[:current_user_id]) %></div>
+	<div class="signup">WELCOME <%= get_user_name(session[:current_user_id]).upcase %></div>
   </div>
 <% end %>
 

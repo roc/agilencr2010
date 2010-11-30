@@ -641,3 +641,30 @@ div.field input.text:hover, div.field textarea:hover, form.standard input.text:h
 	-moz-box-shadow:0 0 10px #000;
 	-webkit-box-shadow:0 0 10px #000;
 }
+
+
+a.bigButton {
+    /* Sliding right image */
+    background: transparent url('../images/button_right_01.png') no-repeat scroll top right;
+	display: block;
+	float: left;
+	height: 36px; /* CHANGE THIS VALUE ACCORDING TO IMAGE HEIGHT */
+	margin-right: 6px;
+	padding-right: 20px; /* CHENGE THIS VALUE ACCORDING TO RIGHT IMAGE WIDTH */
+	/* FONT PROPERTIES */
+	text-decoration: none;
+	color: #000000;
+	font-family: helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+}
+a.bigButton span {
+	/* Background left image */
+	background: transparent url('../images/button_left_01.png') no-repeat;
+	display: block;
+	line-height: 26px; /* CHANGE THIS VALUE ACCORDING TO BUTTON HEIGHT */
+	padding: 5px 0 5px 18px;
+}
+a.bigButton:hover span{
+	text-decoration:underline;
+}

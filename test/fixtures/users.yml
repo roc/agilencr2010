@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20101125055602
+# Schema version: 20101130064543
 #
 # Table name: users
 #
@@ -11,6 +11,8 @@
 #  user_type          :string(255)
 #  created_at         :datetime
 #  updated_at         :datetime
+#  user_organization  :string(255)
+#  user_phone         :integer
 #
 
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html

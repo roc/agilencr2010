@@ -17,6 +17,16 @@
 		</p>
 
 		  <p class="text">
+			<%= f.label :user_organization, "Organization *", :class => "required" %>
+			<%= f.text_field :user_organization, :class => "text" %>
+		  </p>
+
+		  <p class="text">
+			<%= f.label :user_phone, "Phone # *", :class => "required" %>
+			<%= f.text_field :user_phone, :class => "text" %>
+		  </p>
+
+		  <p class="text">
 			<%= f.label :type %>
 			<%= f.select :user_type, {"Attendee" => "ATTENDEE", "Presenter" => "PRESENTER", "Volunteer" => "VOLUNTEER"} %>
 		  </p>

@@ -1,7 +1,9 @@
 module ApplicationHelper
 
 	def user_logged
-    redirect_to(root_path) unless session[:current_user_id]
+		if(session == nil || session[:current_user_id] == nil)
+			redirect_to(root_path)
+		end
   end
 
 	def admin_user

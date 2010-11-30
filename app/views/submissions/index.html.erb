@@ -3,13 +3,22 @@
 	Thank you for your interest in AgileNCR 2011.
 	<br/><br/>
 	<% @submissions.each do |submission| %>
-		  Your submission titled <b>"<%= link_to submission.title, user_submission_path(submission.user.id, submission.id) %>"</b> has the status - <%= submission.submission_status %>.
+				  Your submission titled <b>"<%= link_to submission.title, user_submission_path(submission.user.id, submission.id) %>"</b> has the status - <%= submission.submission_status %>.
 	  <% if submission.submission_status != "WITHDRAWN" %>
-				You can withdraw your submission by clicking <%=  link_to "here", :controller => "submissions", :action => "withdraw", :id => submission.id %>.
+									You can withdraw your submission by clicking <%=  link_to "here", :controller => "submissions", :action => "withdraw", :id => submission.id %>.
 	  <% end %>
 	  <br/><br/>
 	<%  end %>
-	<br/><br/>
-	Click <%=  link_to "here", new_user_submission_path %> to add a session as a presenter.
+	<br/>
+	<%=  link_to content_tag(:span, 'Click here to add a session as a presenter'), new_user_submission_path, :class => "bigButton" %>
+	<br/>
   </div>
 </div>
+<script language="javascript">
+  $(document).ready(function() {
+	$("a[href*=/submission/withdraw]").click(function() {
+	  answer = confirm("Are you sure you want to withdraw the session ?");
+	  return answer;
+	});
+  });
+</script>

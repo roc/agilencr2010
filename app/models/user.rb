@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20101125055602
+# Schema version: 20101130064543
 #
 # Table name: users
 #
@@ -11,6 +11,8 @@
 #  user_type          :string(255)
 #  created_at         :datetime
 #  updated_at         :datetime
+#  user_organization  :string(255)
+#  user_phone         :integer
 #
 
 require 'digest'
@@ -27,6 +29,9 @@ class User < ActiveRecord::Base
   validates :name,  :presence => true, :length   => { :maximum => 50 }
   validates :user_type,  :presence => true, :length   => { :maximum => 50 }
   validates :email, :presence => true, :format   => { :with => email_regex }, :uniqueness => { :case_sensitive => false }
+
+	validates :user_organization,  :presence => true, :length   => { :maximum => 50 }
+	validates :user_phone,  :presence => true
 
   # Automatically create the virtual attribute 'password_confirmation'.
   validates :password, :presence => true, :confirmation => true, :length => { :within => 6..40 }

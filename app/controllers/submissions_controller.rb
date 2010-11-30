@@ -2,7 +2,7 @@ class SubmissionsController < ApplicationController
 
 	include ApplicationHelper
 
-	before_filter :user_logged, :only => [:new, :create, :show, :withdraw]
+	before_filter :user_logged, :only => [:new, :create, :show, :withdraw, :index]
 	before_filter :admin_user, :only => [:edit, :update]
 
 	def index
