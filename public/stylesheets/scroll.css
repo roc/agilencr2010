@@ -36,6 +36,12 @@
 	width:583px;
 	position:relative;
 }
+.scrollable_container .bg_scrollable.fourth_page {
+	background:url(../images/banner4.png) 0 0 no-repeat;
+	height:300px;
+	width:583px;
+	position:relative;
+}
 
 .scrollable_container .items .content_scrollable {
 	padding:25px 27px 20px 27px;
