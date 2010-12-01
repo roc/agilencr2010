@@ -4,11 +4,12 @@ class PagesController < ApplicationController
   end
 
 	def volunteer
-
   end
 
   def attendee
-
   end
+
+	def contact_us
+	end
 
 end

@@ -1,6 +1,6 @@
 .scrollable_container {
 	position:relative;
-	margin:5px 0;
+	margin:5px 0 0 0;
 	overflow:hidden;
 }
 .scrollable_container .scrollable .items {

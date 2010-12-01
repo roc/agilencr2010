@@ -1,47 +1,33 @@
 <%= link_to "", root_path, :class => "logo" %>
 
-<%  if (session[:current_user_id]) %>
-  <div class="newsletter">
-	<div class="signup">WELCOME <%= get_user_name(session[:current_user_id]).upcase %></div>
-  </div>
-<% end %>
-
 <div id="main-menu">
   <% if current_page == "home-index" %>
 	<span id="first-child" class="current">HOME</span>
-	<%= link_to "ABOUT", :controller => "pages", :action => "about" %>
-	<%  if (session[:current_user_id]) %>
-		<%=  link_to "SIGN OUT", signout_path %>
-	  <%  else %>
-		<%=  link_to "SIGN IN", signin_path %>
-	  <%  end %>
+  <% else %>
+	<%= link_to "HOME", root_path %>
   <% end %>
 
   <% if current_page == "pages-about" %>
-	<%= link_to "HOME", root_path %>
 	<span class="current">ABOUT</span>
-	<%  if (session[:current_user_id]) %>
-		<%=  link_to "SIGN OUT", signout_path %>
-	  <%  else %>
-		<%=  link_to "SIGN IN", signin_path %>
-	  <%  end %>
+  <% else %>
+	<%= link_to "ABOUT", :controller => "pages", :action => "about" %>
   <% end %>
 
-  <% if current_page == "sessions-new" %>
-	<%= link_to "HOME", root_path %>
-	<%= link_to "ABOUT", :controller => "pages", :action => "about" %>
-	<span class="current">SIGN IN</span>
+  <% if current_page == "pages-contact_us" %>
+	<span class="current">CONTACT US</span>
+  <% else %>
+	<%= link_to "CONTACT US", :controller => "pages", :action => "contact_us" %>
   <% end %>
 
-  <% if current_page != "sessions-new" && current_page != "pages-about" && current_page != "home-index" %>
-	<%= link_to "HOME", root_path %>
-	<%= link_to "ABOUT", :controller => "pages", :action => "about" %>
-	<%  if (session[:current_user_id]) %>
-	  <%=  link_to "SIGN OUT", signout_path %>
-	<%  else %>
+  <%  if (session[:current_user_id]) %>
+	<%=  link_to "SIGN OUT", signout_path %>
+  <%  else %>
+	<% if current_page == "sessions-new" %>
+	  <span class="current">SIGN IN</span>
+	<% else %>
 	  <%=  link_to "SIGN IN", signin_path %>
-	<%  end %>
-  <% end %>
+	<% end %>
+  <%  end %>
 
 </div>
 

@@ -60,6 +60,7 @@ Agilencr2011::Application.routes.draw do
 	root :to => "home#index"
 
 	get "pages/about"
+	get "pages/contact_us"
 
 	resources :users do
 		resources :submissions
