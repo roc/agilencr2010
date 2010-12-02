@@ -233,7 +233,7 @@ a.signup_btn:hover {
 	width:392px;
 }
 .right_banner {
-	background:url(../images/right_banner.gif) no-repeat;
+	background:url(../images/right_banner.png) no-repeat;
 	width:392px;
 	height:136px;
 	margin-top:5px;
@@ -242,7 +242,7 @@ a.signup_btn:hover {
 .submit_papers_box {
 	background:url(../images/submit_papers_box.gif) no-repeat;
 	width:392px;
-	height:103px;
+	height:106px;
 	margin-top:20px;
 }
 .submit_papers_box h1 {
