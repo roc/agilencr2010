@@ -13,12 +13,6 @@
 	<%= link_to "ABOUT", :controller => "pages", :action => "about" %>
   <% end %>
 
-  <% if current_page == "pages-contact_us" %>
-	<span class="current">CONTACT US</span>
-  <% else %>
-	<%= link_to "CONTACT US", :controller => "pages", :action => "contact_us" %>
-  <% end %>
-
   <%  if (session[:current_user_id]) %>
 	<%=  link_to "SIGN OUT", signout_path %>
   <%  else %>

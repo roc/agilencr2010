@@ -155,7 +155,6 @@ a.signup_btn:hover {
 	background-position:top right;
 	background-repeat:no-repeat;
 	width:583px;
-	height:410px;
 	top: 0px;
 }
 .about_area p {
@@ -240,10 +239,16 @@ a.signup_btn:hover {
 	border-bottom:1px dotted #6b81b3;
 }
 .submit_papers_box {
-	background:url(../images/submit_papers_box.gif) no-repeat;
+	background:url(../images/submit_papers_box.png) no-repeat;
 	width:392px;
-	height:106px;
 	margin-top:20px;
+	height: 102px;
+}
+.signup_box {
+	background:url(../images/submit_papers_box.png) no-repeat;
+	width:392px;
+	margin-top:20px;
+	height: 259px;
 }
 .submit_papers_box h1 {
 	font-size:27px;
@@ -332,15 +337,16 @@ a.signup_btn:hover {
 }
 .speaker_pic {
 	float:left;
-	width:151px;
+	width:110px;
 	background:url(../images/pic_divider.gif);
 	background-position:top right;
 	background-repeat:no-repeat;
 }
 .speaker_details {
 	float:right;
-	width:233px;
+	width:272px;
 	padding-top:10px;
+	border: solid 0px #000;
 }
 .speaker_details span {
 	float:right;
@@ -352,7 +358,7 @@ a.signup_btn:hover {
 .speaker_details p {
 	font-size:13px;
 	color:#8f8e8f;
-	line-height:20px;
+	line-height:16px;
 }
 .news_section {
 	float:left;
@@ -460,8 +466,8 @@ a.signup_btn:hover {
 .adress_area {
 	float:left;
 	margin-top:20px;
-	width:300px;
-	margin-top: 57px;
+	width:700px;
+	margin-top: 18px;
 	margin-bottom: 10px;
 }
 .adress_area h2 {
@@ -470,7 +476,7 @@ a.signup_btn:hover {
 	font-weight:normal;
 }
 .adress_area p {
-	font-size:12px;
+	font-size:11pt;
 	color: #2e2e2e;
 	line-height:15px;
 }
@@ -496,7 +502,7 @@ div.vcard_area p.data {
 .social_media {
 	position:absolute;
 	right:0px;
-	bottom:30px;
+	bottom:55px;
 	float:right;
 	background:url("../images/socialmedia_bg.png") no-repeat scroll left center transparent;
 	width:381px;
@@ -667,9 +673,10 @@ a.bigButton span {
 	display: block;
 	line-height: 26px; /* CHANGE THIS VALUE ACCORDING TO BUTTON HEIGHT */
 	padding: 5px 0 5px 18px;
+	text-decoration: none;
 }
 a.bigButton:hover span{
-	text-decoration:underline;
+	text-decoration:none;
 }
 
 .content_left .nice-text-green {
@@ -684,10 +691,56 @@ a.bigButton:hover span{
     float: left;
     font-size: 13pt;
     line-height: 24px;
-    margin-top: 23px;
+    margin-top: 60px;
     padding-right: 8px;
 }
 
 #slide-show {
 	height: 300px;
+	width: 583px;
+}
+
+
+.content_full {
+	width:998px;
+	border:solid 0px red;
+}
+.content_full img{
+	float:left;
+}
+.content_full h1{
+	border:solid 0px green;
+	color:#060606;
+	float:left;
+	padding-top:40px;
+	padding-left:10px;
+	font-size:22pt;
+	font-weight:normal;
+}
+.content_full table .heading{
+	background-color:#a1a4b2;
+	color:#FFF;
+	text-align:center;
+	font-size:11pt;
+	line-height:30px;
+}
+.content_full table .white_row{
+	background-color:#fff;
+	color:#000;
+	text-align:left;
+	font-size:11pt;
+	padding:0px 5px;
+}
+.content_full table .alternate_row{
+	background-color:#ff6600;
+	color:#000;
+	text-align:left;
+	font-size:11pt;
+	padding:0px 5px;
+}
+.content_full table .white_row td{
+	padding:5px 5px;
+}
+.content_full table .alternate_row td{
+	padding:5px 5px;
 }
