@@ -19,16 +19,16 @@ ol, ul {
 	list-style: none;
 }
 .select_menu {
-background-color:#ffffff;
-border:1px solid #d6d8da;
-color:#636B75;
-font-family:Arial,Helvetica,sans-serif;
-font-size:11px;
+	background-color:#ffffff;
+	border:1px solid #d6d8da;
+	color:#636B75;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:11px;
 
-margin-right:5px;
-padding:8px;
-width:358px;
- 
+	margin-right:5px;
+	padding:8px;
+	width:358px;
+
 }
 .header {
 	height:50px;
@@ -111,7 +111,7 @@ a.signup_btn:hover {
 	margin-left:0;
 }
 /*#main-menu a:last-child {padding-right:0;}*/
-	#main-menu a:hover {
+#main-menu a:hover {
 	color:#FF9C00;
 	border-bottom:none;
 }
@@ -203,10 +203,10 @@ a.signup_btn:hover {
 
 	height:76px;
 
-position:absolute;
-right:305px;
-top:58px;
-width:196px;
+	position:absolute;
+	right:305px;
+	top:58px;
+	width:196px;
 }
 .banner_title p {
 	font-size:15px;
@@ -215,11 +215,11 @@ width:196px;
 	line-height:20px;
 }
 .banner_details {
-position:absolute;
-right:298px;
-top:134px;
+	position:absolute;
+	right:298px;
+	top:134px;
 	width:203px;
-	
+
 	height:221px;
 }
 .banner_details p {
@@ -444,7 +444,7 @@ top:134px;
 	margin-left:0;
 }
 /*#main-menu a:last-child {padding-right:0;}*/
-	.footer_links a:hover {
+.footer_links a:hover {
 	color:#000000;
 	border-bottom:none;
 }
@@ -535,7 +535,7 @@ div.vcard_area p.data {
 	color: #233d79;
 	font-size: 11px;
 	background-color:none;
-!important text-shadow:1px 1px 1px rgba(0, 0, 0, 0.2);
+	!important text-shadow:1px 1px 1px rgba(0, 0, 0, 0.2);
 	font-weight: normal;
 	margin: 10px 5px 0 0;
 	padding:5px 10px 6px 10px;
@@ -626,7 +626,7 @@ div.field input.text:hover, div.field textarea:hover, form.standard input.text:h
 .error {
 	color: #D8000C;
 	background-color: #FFBABA;
-/*	background-image: url('../images/red_cross.png');*/
+	/*	background-image: url('../images/red_cross.png');*/
 }
 
 /* simple css-based tooltip */
@@ -672,11 +672,11 @@ a.bigButton:hover span{
 	text-decoration:underline;
 }
 
-.nice-text-green {
+.content_left .nice-text-green {
 	color: #2E2E2E;
     font-size: 13pt;
     line-height: 24px;
-    margin-top: 23px;
+    margin-top: 43px;
 }
 
 .about_area .nice-text-blue {
@@ -686,4 +686,8 @@ a.bigButton:hover span{
     line-height: 24px;
     margin-top: 23px;
     padding-right: 8px;
+}
+
+#slide-show {
+	height: 300px;
 }
