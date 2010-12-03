@@ -234,11 +234,14 @@ a.signup_btn:hover {
 	width:392px;
 }
 .right_banner {
-	background:url(../images/right_banner.png) no-repeat;
-	width:392px;
-	height:136px;
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	background:transparent url(../images/right_banner.png) no-repeat scroll 0 0;
+	border-bottom:1px dotted #6B81B3;
+	height:106px;
 	margin-top:5px;
-	border-bottom:1px dotted #6b81b3;
+	width:392px;
 }
 .submit_papers_box {
 	background:url(../images/submit_papers_box.png) no-repeat;
