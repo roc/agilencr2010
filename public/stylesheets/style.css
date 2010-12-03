@@ -16,7 +16,10 @@ html, body, div, span, applet, object, iframe, h1, h2, fo h3, h4, h5, h6, p, blo
 	vertical-align: baseline;
 }
 ol, ul {
-	list-style: none;
+	line-height:29px;
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
 }
 .select_menu {
 	background-color:#ffffff;
@@ -581,9 +584,11 @@ form.standard fieldset {
 	width:543px;
 }
 form.standard label {
+	color:#838183;
 	display:block;
 	font-weight:bold;
-	color:#838183;
+	line-height:28px;
+	padding-top:13px;
 }
 form.standard p.submit {
 	margin-top:-20px;
