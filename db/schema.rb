@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(:version => 20101203041745) do
     t.text     "comments"
     t.integer  "duration"
     t.integer  "user_id"
-    t.string   "submission_status"
+    t.string   "submission_status", :default => "SUBMITTED"
     t.string   "audience_type"
     t.datetime "created_at"
     t.datetime "updated_at"
