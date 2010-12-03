@@ -374,12 +374,14 @@ a.signup_btn:hover {
 	font-weight:normal;
 }
 .news_box {
-	background:url(../images/news_box.gif);
-	width:392px;
-	background-position:top left;
-	background-repeat:no-repeat;
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	background:transparent url(../images/news_box.gif) no-repeat scroll left top;
 	margin-bottom:30px;
 	margin-top:10px;
+	padding-bottom:20px;
+	width:392px;
 }
 .news_box p {
 	font-size:13px;
