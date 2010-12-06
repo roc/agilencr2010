@@ -5,9 +5,9 @@
 	  <fieldset class="clearfix">
 		<%= render 'error_messages' %>
 
-		<p class="text">
+            <p class="text">
 		  <%= f.label :title, "Title *", :class => "required" %>
-		  <%= f.text_field :title, :class => "text" %>
+		  <%= f.text_field :title,:class => "text_custom" %>
 		</p>
 
 		<p class="text">
@@ -15,24 +15,34 @@
 		  <%= f.select :submission_type, { "Presentation" => "Presentation", "Discussion or Open Space" => "Discussion", "Workshop" => "Workshop", "Any Other" => "Any Other" }, :class => "select_menu" %>
 		</p>
 
-		  <p class="text">
+                 <p class="text">
+		  <%= f.label :speaker_bio, "Speaker Bio *", :class => "required" %>
+		  <%= f.text_area(:speaker_bio, {:title => 'Please write a few lines about yourself.',:class => "text_area_custom"}) %>
+		</p>
+
+		 <p class="text">
 			<%= f.label :type, "Audience *", :class => "required" %>
 			<%= f.select :audience_type, { "Beginner" => "BEGINNER", "Experienced" => "EXPERIENCED", "Experts" => "EXPERTS" }, :class => "select_menu" %>
 		  </p>
 
 		<p class="text">
 		  <%= f.label :abstract, "Abstract *", :class => "required" %>
-		  <%= f.text_area(:abstract, {:title => 'Please explain in few words what the session is about and what the audience can gain from it.'}) %>
+		  <%= f.text_area(:abstract, {:title => 'Please explain in few words what the session is about.',:class => "text_area_custom"}) %>
+		</p>
+
+                <p class="text">
+		  <%= f.label :take_away, "Take Away for Audience *", :class => "required" %>
+		  <%= f.text_area(:take_away, {:title => 'Please explain in few words what the audience can gain from the session.',:class => "text_area_custom"}) %>
 		</p>
 
 		<p class="text">
 		  <%= f.label :comments, "Comments", :class => "required" %>
-		  <%= f.text_area :comments %>
+		  <%= f.text_area :comments,:class => "text_area_custom" %>
 		</p>
 
 		<p class="text">
 		  <%= f.label :duration, "Approx. duration (in minutes) *", :class => "required" %>
-		  <%= f.text_field :duration, :class => "text" %>
+		   <%= f.select :duration, { "15 minutes" => "15 minutes", "30 - 45 minutes" => "30 - 45 minutes", "1 hour" => "1 hour", " more than 1 hour" => "more than 1 hour" } %>
 		</p>
 
 		<%= f.hidden_field :submission_status, :value => "Submitted" %>
@@ -49,6 +59,17 @@
   $(document).ready(function() {
 	// select all desired input fields and attach tooltips to them
 	$("#new_submission [id*=submission_abstract]").tooltip({
+	  // place tooltip on the right edge
+	  position: "center right",
+	  // a little tweaking of the position
+	  offset: [-2, 10],
+	  // use the built-in fadeIn/fadeOut effect
+	  //effect: "fade",
+	  // custom opacity setting
+	  opacity: 0.7
+	});
+
+        $("#new_submission [id*=take_away]").tooltip({
 	  // place tooltip on the right edge
 	  position: "center right",
 	  // a little tweaking of the position

@@ -250,11 +250,12 @@ a.signup_btn:hover {
 	height: 259px;
 }
 .submit_papers_box h1 {
-	font-size:27px;
-	font-weight:normal;
-	color:#ffffff;
-	padding-top:16px;
-	padding-left:20px;
+    color:#FFFFFF;
+    font-size:25px;
+    font-weight:normal;
+    padding-left:20px;
+    padding-top:26px;
+
 }
 .submit_papers_box p {
 	font-size:13px;
@@ -264,10 +265,12 @@ a.signup_btn:hover {
 	text-align:right;
 }
 .submit_papers_box a {
-	font-size:13px;
-	font-weight:normal;
-	text-decoration:underline;
-	color:#FFFFFF;
+    color:#FFFFFF;
+    font-size:13px;
+    font-weight:normal;
+    line-height:30px;
+    text-decoration:underline;
+
 }
 .margin_top {
 	margin-top:35px;
@@ -594,6 +597,25 @@ form.standard input.text, form.standard textarea {
 	font-size:1em !important;
 	font-family:"Helvetica Neue", Helvetica, Arial, Verdana, sans-serif !important;
 }
+
+div.field input, div.field text, form.standard input.text, form.standard .text_custom {
+	padding:10px !important;
+        height: 20px;
+	width:562px !important;
+	font-size:1em !important;
+	font-family:"Helvetica Neue", Helvetica, Arial, Verdana, sans-serif !important;
+        border:1px solid #D6D8DA;
+	color:#35393e;
+}
+div.field input, div.field textarea, form.standard input.text, form.standard .text_area_custom {
+	padding:10px !important;
+        height: 92px;
+	width:562px !important;
+	font-size:1em !important;
+	font-family:"Helvetica Neue", Helvetica, Arial, Verdana, sans-serif !important;
+        border:1px solid #D6D8DA;
+	color:#35393e;
+}
 form.search label {
 	display:none;
 }
@@ -613,7 +635,10 @@ div.field input, div.field textarea, form.standard input.text, form.standard tex
 	padding:6px 7px;
 	border:1px solid #d6d8da;
 	color:#636b75;
+        height:20px ;
+        width:262px !important;
 }
+
 div.field input.text:hover, div.field textarea:hover, form.standard input.text:hover, form.standard textarea:hover, form.search input.text:hover {
 	border:1px solid #2f86b0;
 	color:#35393e;
@@ -683,7 +708,7 @@ a.bigButton:hover span{
 .content_left .nice-text-green {
 	color: #2E2E2E;
     font-size: 13pt;
-    line-height: 24px;
+    line-height: 125%;
     margin-top: 43px;
 }
 
@@ -691,9 +716,13 @@ a.bigButton:hover span{
     color: #2E2E2E;
     float: left;
     font-size: 13pt;
-    line-height: 24px;
+    line-height: 125%;
     margin-top: 60px;
     padding-right: 8px;
+}
+
+.about_area .nice-text-blue .yellow_text {
+    color: #ff9c00;
 }
 
 #slide-show {
@@ -733,7 +762,7 @@ a.bigButton:hover span{
 	padding:0px 5px;
 }
 .content_full table .alternate_row{
-	background-color:#ff6600;
+	background-color:#E3E4E6;
 	color:#000;
 	text-align:left;
 	font-size:11pt;

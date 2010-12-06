@@ -10,19 +10,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101203041745) do
+ActiveRecord::Schema.define(:version => 20101206073204) do
 
   create_table "submissions", :force => true do |t|
     t.string   "title"
     t.string   "submission_type"
     t.text     "abstract"
     t.text     "comments"
-    t.integer  "duration"
+    t.string   "duration"
     t.integer  "user_id"
     t.string   "submission_status", :default => "SUBMITTED"
     t.string   "audience_type"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "speaker_bio"
+    t.text     "take_away"
   end
 
   create_table "users", :force => true do |t|
