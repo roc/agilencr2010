@@ -762,7 +762,11 @@ a.bigButton:hover span{
 	padding:0px 5px;
 }
 .content_full table .alternate_row{
+<<<<<<< .merge_file_DKjM9b
 	background-color:#E3E4E6;
+=======
+	background-color:#C1C5D5;
+>>>>>>> .merge_file_9xmL0b
 	color:#000;
 	text-align:left;
 	font-size:11pt;

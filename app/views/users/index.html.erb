@@ -1,27 +1,32 @@
-<h1>All users</h1>
-<% flash.each do |key, value| %>
-  <div class="<%= key %>"><%= value %></div>
-<% end %>
-<table>
-  <thead>
-	<tr>
-	  <td>ID</td><td>User Name</td><td>E-Mail</td><td>User Type</td><td>Admin?</td><td>Organization</td><td>Phone</td><td>Submission</td>
-	</tr>
-  </thead>
-  <% @users.each do |user| %>
-    <tr>
-      <td><%= user.id %></td>
-	  <td><%= user.name %></td>
-	  <td><%= user.email %></td>
-	  <td><%= user.user_type %></td>
-	  <td><%= user.admin %></td>
-	  <td><%= user.user_organization %></td>
-	  <td><%= user.user_phone %></td>
-	  <td>
-		<% user.submissions.each do |submission| %>
-		  <%= link_to  submission.title, edit_user_submission_path(user.id, submission.id) %>
-		<%  end %>
-	  </td>
-    </tr>
+<div class="content_full">
+  <h1>Welcome Admin ! Following users have registered</h1><br />
+  <br />
+  <% flash.each do |key, value| %>
+	<div class="<%= key %>"><%= value %></div>
   <% end %>
-</table>
+  <table>
+	<thead>
+	  <tr class="heading">
+		<td>ID</td><td>User Name</td><td>E-Mail</td><td>User Type</td><td>Admin?</td><td>Organization</td><td>Phone</td><td>Submission</td>
+	  </tr>
+	</thead>
+	<% count = 1 %>
+	<% @users.each do |user| %>
+	  <tr class="<%=  count % 2 == 0 ? "alternate_row" : "white_row"%>">
+		<td><%= user.id %></td>
+		<td><%= user.name %></td>
+		<td><%= user.email %></td>
+		<td><%= user.user_type %></td>
+		<td><%= user.admin %></td>
+		<td><%= user.user_organization %></td>
+		<td><%= user.user_phone %></td>
+		<td>
+		  <% user.submissions.each do |submission| %>
+			<%= link_to  submission.title, edit_user_submission_path(user.id, submission.id) %>
+		  <%  end %>
+		</td>
+	  </tr>
+	  <% count = count + 1 %>
+	<% end %>
+  </table>
+</div>
