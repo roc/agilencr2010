@@ -6,8 +6,10 @@
 #  id                :integer         not null, primary key
 #  title             :string(255)
 #  submission_type   :string(255)
+#  speaker_bio       :text
 #  abstract          :text
 #  comments          :text
+#  take_away         :string(255)
 #  duration          :integer
 #  user_id           :integer
 #  submission_status :string(255)
@@ -18,15 +20,17 @@
 
 class Submission < ActiveRecord::Base
 
-  attr_accessible(:title, :submission_type, :abstract, :comments, :duration, :submission_status, :audience_type)
+  attr_accessible(:title, :submission_type,:speaker_bio, :abstract, :comments,:take_away, :duration, :submission_status, :audience_type)
 
   belongs_to :user
 
   validates :title,  :presence => true, :length   => { :maximum => 50 }
   validates :submission_type,  :presence => true, :length   => { :maximum => 50 }
+  validates :speaker_bio,  :presence => true
   validates :abstract,  :presence => true
+  validates :take_away,  :presence => true
   validates :duration,  :presence => true
-	validates_numericality_of :duration, :only_integer => true
+
 	validates :submission_status, :presence => true
 	validates :audience_type, :presence => true
 
