@@ -5,7 +5,8 @@ class UsersController < ApplicationController
   before_filter :admin_user, :only => [:index, :show, :edit, :update]
 
   def new
-    @user = User.new()
+		redirect_to root_path
+    #@user = User.new()
   end
 
   def create

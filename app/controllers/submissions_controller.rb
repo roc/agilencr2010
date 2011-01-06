@@ -10,7 +10,8 @@ class SubmissionsController < ApplicationController
 	end
 
   def new
-		@submission = Submission.new()
+		redirect_to root_path
+		#@submission = Submission.new()
   end
 
 	def create
