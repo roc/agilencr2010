@@ -237,7 +237,7 @@ a.signup_btn:hover {
 	-moz-background-clip:border;
 	-moz-background-inline-policy:continuous;
 	-moz-background-origin:padding;
-	background:transparent url(../images/hurry.gif) no-repeat scroll 0 0;
+	background:transparent url(../images/closed.gif) no-repeat scroll 0 0;
 	border-bottom:1px dotted #6B81B3;
 	height:106px;
 	margin-top:5px;
@@ -260,15 +260,14 @@ a.signup_btn:hover {
     font-size:25px;
     font-weight:normal;
     padding-left:20px;
-    padding-top:26px;
+    padding-top:16px;
 
 }
 .submit_papers_box p {
-	font-size:13px;
+	font-size:25px;
 	font-weight:normal;
-	color:#ffffff;
-	padding-right:70px;
-	text-align:right;
+	color:#FA2F2F;
+	padding-left:20px;
 }
 .submit_papers_box a {
     color:#FFFFFF;
