@@ -257,23 +257,24 @@ a.signup_btn:hover {
 }
 .submit_papers_box h1 {
     color:#FFFFFF;
-    font-size:25px;
+    font-size:20px;
     font-weight:normal;
     padding-left:20px;
     padding-top:16px;
 
 }
 .submit_papers_box p {
-	font-size:25px;
+	font-size:20px;
 	font-weight:normal;
 	color:#FA2F2F;
 	padding-left:20px;
 }
 .submit_papers_box a {
     color:#FFFFFF;
-    font-size:13px;
-    font-weight:normal;
-    line-height:30px;
+    font-size:16px;
+    font-weight:bold;
+	padding-left:20px;
+    line-height:24px;
     text-decoration:underline;
 
 }
