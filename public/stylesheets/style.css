@@ -237,7 +237,7 @@ a.signup_btn:hover {
 	-moz-background-clip:border;
 	-moz-background-inline-policy:continuous;
 	-moz-background-origin:padding;
-	background:transparent url(../images/closed.gif) no-repeat scroll 0 0;
+	background:transparent url(../images/under_review.gif) no-repeat scroll 0 0;
 	border-bottom:1px dotted #6B81B3;
 	height:106px;
 	margin-top:5px;
@@ -322,12 +322,8 @@ a.signup_btn:hover {
 	color:#2e2e2e;
 	line-height:20px;
 }
-.speakers_call {
-	float:left;
-	width:392px;
+.speakers_call_h1 {
 	margin-top:30px;
-}
-.speakers_call h1 {
 	font-size:18px;
 	color: #ff9c00;
 	background:url(../images/blue_bars.gif);
@@ -335,6 +331,15 @@ a.signup_btn:hover {
 	background-repeat:repeat-x;
 	padding-bottom:10px;
 	font-weight:normal;
+}
+.speakers_call {
+	float:left;
+	width:425px;
+	height: 400px;
+	margin-top:10px;
+	overflow-y: scroll;
+}
+.speakers_call {
 }
 .speakers_box {
 	width:390px;
@@ -349,6 +354,7 @@ a.signup_btn:hover {
 	background:url(../images/pic_divider.gif);
 	background-position:top right;
 	background-repeat:no-repeat;
+	margin: 2px;
 }
 .speaker_details {
 	float:right;
@@ -741,6 +747,7 @@ a.bigButton:hover span{
 
 .content_full {
 	width:998px;
+	min-height: 160px;
 	border:solid 0px red;
 }
 .content_full img{
@@ -748,11 +755,20 @@ a.bigButton:hover span{
 }
 .content_full h1{
 	border:solid 0px green;
-	color:#060606;
+	color:#f99b1f;
 	float:left;
-	padding-top:40px;
+	padding-top:25px;
 	padding-left:10px;
 	font-size:22pt;
+	font-weight:normal;
+}
+.content_full h2{
+	border:solid 0px green;
+	color:#2f528c;
+	float:left;
+	padding-top:5px;
+	padding-left:10px;
+	font-size:20pt;
 	font-weight:normal;
 }
 .content_full table .heading{
@@ -781,4 +797,10 @@ a.bigButton:hover span{
 }
 .content_full table .alternate_row td{
 	padding:5px 5px;
+}
+#map_box {
+	border:solid 1px green;
+	height: 400px;
+	width: 600px;
+	margin: 10px;
 }

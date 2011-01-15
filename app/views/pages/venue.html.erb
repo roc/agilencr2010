@@ -1,0 +1,26 @@
+<div class="content_full">
+  <h1>AgileNCR 2011 will be held on <b>25th and 26th February 2011</b> at -</h1>
+  <h2>NCUI Convention Centre : </h2>
+  <h2>3, Khel Gaon Marg, New Delhi - 16</h2>
+  <h2>Opposite Siri Fort Auditorium and next to PHD Chamber of Commerce</h2>
+</div>
+<div id="map_box"></div>
+<script type="text/javascript">
+  $(function() {
+	var myLatlng = new google.maps.LatLng(28.553728984923932, 77.21157878637314);
+
+	var myOptions = {
+      zoom: 15,
+      center: myLatlng,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+
+	var map = new google.maps.Map(document.getElementById("map_box"), myOptions);
+
+    var marker = new google.maps.Marker({
+	  position: myLatlng,
+	  map: map,
+	  title:"Hello World!"
+    });
+  });
+</script>

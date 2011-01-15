@@ -9,6 +9,9 @@ class PagesController < ApplicationController
   def attendee
   end
 
+	def venue
+	end
+
 #	def contact_us
 #	end
 
