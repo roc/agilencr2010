@@ -1,0 +1,135 @@
+.table_data{
+float:left;
+margin-top:10px;
+width:100%;
+}
+
+.table_border {
+	margin: 0 auto;
+	width: 100%;
+	border-left: 1px solid #c1c1c1;
+	border-right: 1px solid #c1c1c1;
+}
+.budget tr {
+background: url("../images/table_bg.png") repeat-x scroll 0 0 transparent;
+	
+	border-bottom: 1px solid #c1c1c1;
+	border-left: 1px solid #c1c1c1;
+	color: #678197;
+	padding: 5px 6px;
+	text-align: left;
+}
+
+.break_bg {
+background: url("../images/break_bg.png") repeat-x scroll 0 0 transparent !important;
+height:30px;
+	text-align: left;
+}
+
+.no_padding{
+padding:0px !important;
+
+}
+
+.user_headings {
+	font-weight:bold;
+	float:left;
+	padding:0px 0 0 0;
+	color:#f69e29;
+	
+	width:100%;
+}
+div.user_headings p.data {
+	background:url("../images/coffee_icon.png") no-repeat scroll left center transparent;
+	color:#000000;
+	font-size:12px;
+	font-weight:bold;
+height: 22px;
+    margin-left: 5px;
+    padding-left: 28px;
+    padding-top: 0;
+}
+.budget .table_header {
+	
+	border-top: 1px solid #c1c1c1;
+	color: #2A4D8E;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: left;
+	height:29px;
+	padding-top: 8px;
+}
+.budget thead th {
+	background-image: url("../images/tbody_bg.png");
+	background-repeat: repeat-x;
+	color: #000000;
+	font: 12px "Arial", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	height: 33px;
+	padding-left: 50px;
+	text-align: left;
+	padding-top:7px;
+	border-top: 1px solid #c1c1c1;
+	font-weight:bold;
+}
+.budget th {
+	border-bottom: 1px solid #c1c1c1;
+	border-left: 1px solid #c1c1c1;
+	color: #678197;
+	font-weight: normal;
+	padding: 0;
+	text-align: left;
+}
+.budget a {
+	color:#ff6000;
+	text-decoration:none;
+	font-weight:normal;
+	text-decoration:underline;
+}
+.budget td {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border-bottom: 1px solid #c1c1c1;
+	border-left: 1px solid #c1c1c1;
+	color: #303030;
+	padding: 13px;
+	text-align: left;
+	font-size: 12px;
+}
+.field_small {
+	background: none repeat scroll 0 0 #ffffff;
+	border: 1px solid #b3cadb;
+	color: #000000;
+	font: 11px "Arial", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	padding: 3px;
+	width: 20px;
+}
+.budget tr.odd td, tr.odd .column1 {
+	background: none repeat scroll 0 0 #F4F9FE;
+}
+.budget tr.even td, tr.even .column1 {
+	background: none repeat scroll 0 0 #e7f5ff;
+}
+.left_align {
+	text-align:left !important;
+	padding:5px!important;
+}
+.no_border {
+	border-left:none !important;
+}
+.no_border_bottom {
+	border-bottom:none !important;
+}
+.middle_align {
+	vertical-align:middle;
+}
+
+.bg_green{
+background: none repeat scroll 0 0 #e6f1c1 !important;
+}
+
+.bg_blue{
+background: none repeat scroll 0 0 #ddfef4 !important;
+}
+
+.bg_pink{
+background: none repeat scroll 0 0 #eaddfe !important;
+}

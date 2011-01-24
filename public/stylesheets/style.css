@@ -237,7 +237,17 @@ a.signup_btn:hover {
 	-moz-background-clip:border;
 	-moz-background-inline-policy:continuous;
 	-moz-background-origin:padding;
-	background:transparent url(../images/under_review.gif) no-repeat scroll 0 0;
+/*	background:transparent url(../images/register_now_hp.png) no-repeat scroll 0 0;*/
+	border-bottom:1px dotted #6B81B3;
+	height:106px;
+	margin-top:5px;
+	width:392px;
+}
+.agenda_banner {
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+/*	background:transparent url(../images/agenda.png) no-repeat scroll 0 0;*/
 	border-bottom:1px dotted #6B81B3;
 	height:106px;
 	margin-top:5px;
@@ -756,7 +766,7 @@ a.bigButton:hover span{
 .content_full h1{
 	border:solid 0px green;
 	color:#f99b1f;
-	float:left;
+	display: block;
 	padding-top:25px;
 	padding-left:10px;
 	font-size:22pt;
