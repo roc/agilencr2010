@@ -1,7 +1,7 @@
 .table_data{
-float:left;
-margin-top:10px;
-width:100%;
+	float:left;
+	margin-top:10px;
+	width:100%;
 }
 
 .table_border {
@@ -11,23 +11,23 @@ width:100%;
 	border-right: 1px solid #c1c1c1;
 }
 .budget tr {
-background: url("../images/table_bg.png") repeat-x scroll 0 0 transparent;
-	
+	background: url("../images/table_bg.png") repeat-x scroll 0 0 transparent;
+
 	border-bottom: 1px solid #c1c1c1;
 	border-left: 1px solid #c1c1c1;
 	color: #678197;
 	padding: 5px 6px;
-	text-align: left;
+	text-align: center;
 }
 
 .break_bg {
-background: url("../images/break_bg.png") repeat-x scroll 0 0 transparent !important;
-height:30px;
+	background: url("../images/break_bg.png") repeat-x scroll 0 0 transparent !important;
+	height:30px;
 	text-align: left;
 }
 
 .no_padding{
-padding:0px !important;
+	padding:0px !important;
 
 }
 
@@ -36,7 +36,6 @@ padding:0px !important;
 	float:left;
 	padding:0px 0 0 0;
 	color:#f69e29;
-	
 	width:100%;
 }
 div.user_headings p.data {
@@ -44,18 +43,30 @@ div.user_headings p.data {
 	color:#000000;
 	font-size:12px;
 	font-weight:bold;
-height: 22px;
+	height: 22px;
     margin-left: 5px;
     padding-left: 28px;
     padding-top: 0;
+	text-align: left;
+}
+div.user_headings p.data2 {
+	background:url("../images/lunch.png") no-repeat scroll left center transparent;
+	color:#000000;
+	font-size:12px;
+	font-weight:bold;
+	height: 22px;
+    margin-left: 5px;
+    padding-left: 28px;
+    padding-top: 0;
+	text-align: left;
 }
 .budget .table_header {
-	
+
 	border-top: 1px solid #c1c1c1;
 	color: #2A4D8E;
 	font-size: 12px;
 	font-weight: bold;
-	text-align: left;
+	text-align: center;
 	height:29px;
 	padding-top: 8px;
 }
@@ -65,8 +76,7 @@ height: 22px;
 	color: #000000;
 	font: 12px "Arial", "Trebuchet MS", Arial, Helvetica, sans-serif;
 	height: 33px;
-	padding-left: 50px;
-	text-align: left;
+	text-align: center;
 	padding-top:7px;
 	border-top: 1px solid #c1c1c1;
 	font-weight:bold;
@@ -77,7 +87,7 @@ height: 22px;
 	color: #678197;
 	font-weight: normal;
 	padding: 0;
-	text-align: left;
+	text-align: center;
 }
 .budget a {
 	color:#ff6000;
@@ -90,8 +100,8 @@ height: 22px;
 	border-bottom: 1px solid #c1c1c1;
 	border-left: 1px solid #c1c1c1;
 	color: #303030;
-	padding: 13px;
-	text-align: left;
+	padding: 13px 5px;
+	text-align: center;
 	font-size: 12px;
 }
 .field_small {
@@ -123,13 +133,13 @@ height: 22px;
 }
 
 .bg_green{
-background: none repeat scroll 0 0 #e6f1c1 !important;
+	background: none repeat scroll 0 0 #e6f1c1 !important;
 }
 
 .bg_blue{
-background: none repeat scroll 0 0 #ddfef4 !important;
+	background: none repeat scroll 0 0 #ddfef4 !important;
 }
 
 .bg_pink{
-background: none repeat scroll 0 0 #eaddfe !important;
+	background: none repeat scroll 0 0 #eaddfe !important;
 }
