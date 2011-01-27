@@ -15,6 +15,9 @@ class PagesController < ApplicationController
 	def agenda
 	end
 
+	def register
+	end
+
 #	def contact_us
 #	end
 
