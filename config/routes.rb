@@ -65,6 +65,32 @@ Agilencr2011::Application.routes.draw do
 	get "pages/agenda"
 	get "pages/register"
 
+	get "details/bharti"
+	get "details/shaik"
+	get "details/pete"
+	get "details/sanjiv"
+	get "details/mehjabeen"
+	get "details/ruchika"
+	get "details/kanchan"
+	get "details/olav"
+	get "details/vibhu"
+	get "details/asheesh"
+	get "details/jonas"
+	get "details/madhur"
+	get "details/raj"
+	get "details/deepak"
+	get "details/jesse"
+	get "details/nilay"
+	get "details/priyank"
+	get "details/om"
+	get "details/mayur"
+	get "details/rashina"
+	get "details/rohit"
+	get "details/iwein"
+	get "details/divakar"
+	get "details/shweta"
+	get "details/preethi"
+
 	resources :users do
 		resources :submissions
 	end

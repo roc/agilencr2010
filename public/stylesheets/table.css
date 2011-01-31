@@ -10,9 +10,9 @@
 	border-left: 1px solid #c1c1c1;
 	border-right: 1px solid #c1c1c1;
 }
+
 .budget tr {
 	background: url("../images/table_bg.png") repeat-x scroll 0 0 transparent;
-
 	border-bottom: 1px solid #c1c1c1;
 	border-left: 1px solid #c1c1c1;
 	color: #678197;

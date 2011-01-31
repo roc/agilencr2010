@@ -13,15 +13,19 @@
 	<%= link_to "ABOUT", :controller => "pages", :action => "about" %>
   <% end %>
 
-  <%  if (session[:current_user_id]) %>
-	<%=  link_to "SIGN OUT", signout_path %>
-  <%  else %>
-	<% if current_page == "sessions-new" %>
-	  <span class="current">SIGN IN</span>
-	<% else %>
-	  <%=  link_to "SIGN IN", signin_path %>
-	<% end %>
-  <%  end %>
+  <% if current_page == "pages-venue" %>
+	<span class="current">VENUE</span>
+  <% else %>
+	<%= link_to "VENUE", :controller => "pages", :action => "venue" %>
+  <% end %>
+	
+  <% if current_page == "pages-agenda" %>
+	<span class="current">AGENDA</span>
+  <% else %>
+	<%= link_to "AGENDA", :controller => "pages", :action => "agenda" %>
+  <% end %>
+
+
 
 </div>
 
