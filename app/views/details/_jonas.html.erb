@@ -1,20 +1,8 @@
-<table style="width: 80%; margin: 0 auto;font: 16px Arial, Helvetica, sans-serif;">
-  <tr>
-	<td style="background-image:url('../../images/table_bg.png');background-repeat:repeat-x;">About the speaker</td>
-  </tr>
-  <tr>
-	<td>
-	  Jonas is a Danish agile evangelist living in Delhi. He trains Java developers in the agile way and acts as product owner by proxy on several projects. In his free time he loves reading books on agile development and other methodologies even remotely associated with IT. Jonas has 10 years experience in the IT industry - most of it spent in Agile environments.
-	</td>
-  </tr>
-  <tr>
-	<td style="background-image:url('../../images/table_bg.png');background-repeat:repeat-x;">Session Abstract</td>
-  </tr>
-  <tr>
-	<td>
-	  Test Driven Development is all the hype, but how many are really using it? The biggest challenge for developers who wants to go test driven is to get started. But if you have never tried it before, it may seem an insurmountable task to write the first test.
-	  This workshop encourages people to bring their own laptop and try it out for themselves. An editor - preferably for Java - must be installed already. Alternately, participants can follow the on-screen work of my laptop, as I go through a simple TDD run.
-	  Before, during and after I will describe why and how we should employ TDD using arguments from Kent Becks books on XP and TDD.
-	</td>
-  </tr>
-</table>
+<% content_for :bio do %>
+  Jonas is a Danish agile evangelist living in Delhi. He trains Java developers in the agile way and acts as product owner by proxy on several projects. In his free time he loves reading books on agile development and other methodologies even remotely associated with IT. Jonas has 10 years experience in the IT industry - most of it spent in Agile environments.
+<%end%>
+<% content_for :abstract do %>
+		Test Driven Development is all the hype, but how many are really using it? The biggest challenge for developers who wants to go test driven is to get started. But if you have never tried it before, it may seem an insurmountable task to write the first test.
+		This workshop encourages people to bring their own laptop and try it out for themselves. An editor - preferably for Java - must be installed already. Alternately, participants can follow the on-screen work of my laptop, as I go through a simple TDD run.
+		Before, during and after I will describe why and how we should employ TDD using arguments from Kent Becks books on XP and TDD.
+<%end%>

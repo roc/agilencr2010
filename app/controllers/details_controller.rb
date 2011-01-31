@@ -1,103 +1,103 @@
 class DetailsController < ApplicationController
 
 	def bharti
-		render :partial => "bharti"
+		render :partial => "bharti", :layout => "details_layout"
 	end
 
 	def shaik
-		render :partial => "shaik"
+		render :partial => "shaik", :layout => "details_layout"
 	end
 
 	def pete
-		render :partial => "pete"
+		render :partial => "pete", :layout => "details_layout"
 	end
 
 	def sanjiv
-		render :partial => "sanjiv"
+		render :partial => "sanjiv", :layout => "details_layout"
 	end
 
 	def mehjabeen
-		render :partial => "mehjabeen"
+		render :partial => "mehjabeen", :layout => "details_layout"
 	end
 
 	def ruchika
-		render :partial => "ruchika"
+		render :partial => "ruchika", :layout => "details_layout"
 	end
 
 	def kanchan
-		render :partial => "kanchan"
+		render :partial => "kanchan", :layout => "details_layout"
 	end
 
 	def olav
-		render :partial => "olav"
+		render :partial => "olav", :layout => "details_layout"
 	end
 
 	def vibhu
-		render :partial => "vibhu"
+		render :partial => "vibhu", :layout => "details_layout"
 	end
 
 	def asheesh
-		render :partial => "asheesh"
+		render :partial => "asheesh", :layout => "details_layout"
 	end
 
 	def jonas
-		render :partial => "jonas"
+		render :partial => "jonas", :layout => "details_layout"
 	end
 
 	def madhur
-		render :partial => "madhur"
+		render :partial => "madhur", :layout => "details_layout"
 	end
 
 	def raj
-		render :partial => "raj"
+		render :partial => "raj", :layout => "details_layout"
 	end
 
 	def deepak
-		render :partial => "deepak"
+		render :partial => "deepak", :layout => "details_layout"
 	end
 
 	def jesse
-		render :partial => "jesse"
+		render :partial => "jesse", :layout => "details_layout"
 	end
 
 	def nilay
-		render :partial => "nilay"
+		render :partial => "nilay", :layout => "details_layout"
 	end
 
 	def priyank
-		render :partial => "priyank"
+		render :partial => "priyank", :layout => "details_layout"
 	end
 
 	def om
-		render :partial => "om"
+		render :partial => "om", :layout => "details_layout"
 	end
 
 	def mayur
-		render :partial => "mayur"
+		render :partial => "mayur", :layout => "details_layout"
 	end
 
 	def rashina
-		render :partial => "rashina"
+		render :partial => "rashina", :layout => "details_layout"
 	end
 
 	def rohit
-		render :partial => "rohit"
+		render :partial => "rohit", :layout => "details_layout"
 	end
 
 	def iwein
-		render :partial => "iwein"
+		render :partial => "iwein", :layout => "details_layout"
 	end
 
 	def divakar
-		render :partial => "divakar"
+		render :partial => "divakar", :layout => "details_layout"
 	end
 
 	def shweta
-		render :partial => "shweta"
+		render :partial => "shweta", :layout => "details_layout"
 	end
 
 	def preethi
-		render :partial => "preethi"
+		render :partial => "preethi", :layout => "details_layout"
 	end
 
 end
