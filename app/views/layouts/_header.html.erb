@@ -13,6 +13,12 @@
 	<%= link_to "ABOUT", :controller => "pages", :action => "about" %>
   <% end %>
 
+  <% if current_page == "pages-regsiter" %>
+	<span class="current">REGISTER</span>
+  <% else %>
+	<%= link_to "REGISTER", :controller => "pages", :action => "register" %>
+  <% end %>
+
   <% if current_page == "pages-venue" %>
 	<span class="current">VENUE</span>
   <% else %>
