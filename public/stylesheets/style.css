@@ -772,11 +772,11 @@ a.bigButton:hover span{
 .content_full h2{
 	border:solid 0px green;
 	color:#2f528c;
-	float:left;
 	padding-top:5px;
 	padding-left:10px;
 	font-size:20pt;
 	font-weight:normal;
+	text-align: center;
 }
 .content_full table .heading{
 	background-color:#a1a4b2;
