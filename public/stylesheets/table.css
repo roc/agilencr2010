@@ -115,9 +115,6 @@ div.user_headings p.data2 {
 	padding: 3px;
 	width: 20px;
 }
-.budget tr.odd td, tr.odd .column1 {
-	background: none repeat scroll 0 0 #F4F9FE;
-}
 /*.budget tr.even td, tr.even .column1 {
 	background: none repeat scroll 0 0 #e7f5ff;
 }*/
