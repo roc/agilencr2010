@@ -39,7 +39,7 @@
 	width:100%;
 }
 div.user_headings p.data {
-	background:url("../images/coffee_icon.png") no-repeat scroll left center transparent;
+/*	background:url("../images/coffee_icon.png") no-repeat scroll left center transparent;*/
 	color:#000000;
 	font-size:12px;
 	font-weight:bold;
@@ -48,10 +48,10 @@ div.user_headings p.data {
 	margin-left:5px;
 	padding-left:28px;
 	padding-top:0;
-	text-align:left;
+	text-align:center;
 }
 div.user_headings p.data2 {
-	background:url("../images/lunch.png") no-repeat scroll left center transparent;
+	/*background:url("../images/lunch.png") no-repeat scroll left center transparent;*/
 	color:#000000;
 	font-size:12px;
 	font-weight:bold;
@@ -60,7 +60,7 @@ div.user_headings p.data2 {
     margin-left: 5px;
     padding-left: 28px;
     padding-top: 0;
-	text-align: left;
+	text-align: center;
 }
 .budget .table_header {
 
@@ -76,12 +76,13 @@ div.user_headings p.data2 {
 	background-image: url("../images/tbody_bg.png");
 	background-repeat: repeat-x;
 	color: #000000;
-	font: 12px "Arial", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font: 14px "Arial", "Trebuchet MS", Arial, Helvetica, sans-serif;
 	height: 33px;
 	text-align: center;
 	padding-top:7px;
 	border-top: 1px solid #c1c1c1;
 	font-weight:bold;
+	min-width: 160px;
 }
 .budget th {
 	border-bottom: 1px solid #c1c1c1;
@@ -117,9 +118,9 @@ div.user_headings p.data2 {
 .budget tr.odd td, tr.odd .column1 {
 	background: none repeat scroll 0 0 #F4F9FE;
 }
-.budget tr.even td, tr.even .column1 {
+/*.budget tr.even td, tr.even .column1 {
 	background: none repeat scroll 0 0 #e7f5ff;
-}
+}*/
 .left_align {
 	text-align:left !important;
 	padding:5px!important;
@@ -134,7 +135,7 @@ div.user_headings p.data2 {
 	vertical-align:middle;
 }
 
-.bg_green{
+/*.bg_green{
 	background: none repeat scroll 0 0 #e6f1c1 !important;
 }
 
@@ -145,4 +146,4 @@ div.user_headings p.data2 {
 .bg_pink{
 	background: none repeat scroll 0 0 #eaddfe !important;
 }
-
+*/
