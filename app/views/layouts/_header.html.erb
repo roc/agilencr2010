@@ -16,7 +16,7 @@
   <% if current_page == "pages-register" %>
 	<span class="current">REGISTER</span>
   <% else %>
-	<%= link_to "REGISTER", :controller => "pages", :action => "register" %>
+	<%= link_to "REGISTER", {:controller => "pages", :action => "register"}, {:style => "font-weight:bold; color:#FF9C00"} %>
   <% end %>
 
   <% if current_page == "pages-venue" %>
