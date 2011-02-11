@@ -12,16 +12,22 @@
 </div>
 
 <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21337840-1']);
+  _gaq.push(['_trackPageview']);
+  
   $(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	
 	var $buttons = $('div.buttons');
 	$("#browsable").scrollable({circular: true, onBeforeSeek: function(event, index) {
-
 	  }}).navigator();
 	$('.button_green').click(function() {
 	  $("#browsable").scrollable().end();
 	  return false;
 	});
-
 	$('.scrollable_container>.prev,.scrollable_container>.next').bind('selectstart mousedown', function(event) {
 	  event.preventDefault();
 	});
