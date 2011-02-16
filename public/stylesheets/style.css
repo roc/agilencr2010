@@ -778,6 +778,22 @@ a.bigButton:hover span{
 	font-weight:normal;
 	text-align: center;
 }
+.content_full h4{
+	border:solid 0px green;
+	color:#2f528c;
+	padding-top:5px;
+	padding-left:10px;
+	font-size:15pt;
+	font-weight:normal;
+	text-align: left;
+	margin-bottom:10px;
+	margin-top:10px;
+}
+.content_full p{
+	padding-left:10px;
+	font-size:12pt;
+	font-weight:normal;
+}
 .content_full table .heading{
 	background-color:#a1a4b2;
 	color:#FFF;
