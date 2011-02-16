@@ -825,4 +825,12 @@ a.bigButton:hover span{
 	height: 400px;
 	width: 600px;
 	margin: 10px;
+	float: left;
+}
+#venue_pics {
+	border:solid 1px #2F528C;
+	height: 400px;
+	width: 354px;
+	margin: 10px;
+	float: right;
 }
