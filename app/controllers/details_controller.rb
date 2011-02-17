@@ -100,4 +100,8 @@ class DetailsController < ApplicationController
 		render :partial => "preethi", :layout => "details_layout"
 	end
 
+	def vivek
+		render :partial => "vivek", :layout => "details_layout"
+	end
+
 end

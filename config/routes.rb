@@ -90,6 +90,7 @@ Agilencr2011::Application.routes.draw do
 	get "details/divakar"
 	get "details/shweta"
 	get "details/preethi"
+	get "details/vivek"
 
 	resources :users do
 		resources :submissions
