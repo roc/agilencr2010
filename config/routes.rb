@@ -91,6 +91,7 @@ Agilencr2011::Application.routes.draw do
 	get "details/shweta"
 	get "details/preethi"
 	get "details/vivek"
+	get "details/innovation_games"
 
 	resources :users do
 		resources :submissions

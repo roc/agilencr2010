@@ -104,4 +104,8 @@ class DetailsController < ApplicationController
 		render :partial => "vivek", :layout => "details_layout"
 	end
 
+	def innovation_games
+		render :partial => "innovation_games"
+	end
+
 end
