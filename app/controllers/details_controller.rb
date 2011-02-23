@@ -48,8 +48,8 @@ class DetailsController < ApplicationController
 		render :partial => "madhur", :layout => "details_layout"
 	end
 
-	def raj
-		render :partial => "raj", :layout => "details_layout"
+	def line
+		render :partial => "line", :layout => "details_layout"
 	end
 
 	def deepak
@@ -106,6 +106,10 @@ class DetailsController < ApplicationController
 
 	def innovation_games
 		render :partial => "innovation_games"
+	end
+
+	def lightning
+		render :partial => "lightning"
 	end
 
 end

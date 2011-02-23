@@ -77,7 +77,7 @@ Agilencr2011::Application.routes.draw do
 	get "details/asheesh"
 	get "details/jonas"
 	get "details/madhur"
-	get "details/raj"
+	get "details/line"
 	get "details/deepak"
 	get "details/jesse"
 	get "details/nilay"
@@ -92,6 +92,7 @@ Agilencr2011::Application.routes.draw do
 	get "details/preethi"
 	get "details/vivek"
 	get "details/innovation_games"
+	get "details/lightning"
 
 	resources :users do
 		resources :submissions
