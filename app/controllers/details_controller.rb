@@ -105,7 +105,7 @@ class DetailsController < ApplicationController
 	end
 
 	def innovation_games
-		render :partial => "innovation_games"
+		render :partial => "innovation_games", :layout => "details_layout"
 	end
 
 	def lightning
