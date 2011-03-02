@@ -13,18 +13,12 @@
 	<%= link_to "ABOUT", :controller => "pages", :action => "about" %>
   <% end %>
 
-  <% if current_page == "pages-register" %>
-	<span class="current">REGISTER</span>
+  <% if current_page == "pages-pics" %>
+	<span class="current">2011 Pics</span>
   <% else %>
-	<%= link_to "REGISTER", {:controller => "pages", :action => "register"}, {:style => "font-weight:bold; color:#FF9C00"} %>
+	<%= link_to "2011 PICS", :controller => "pages", :action => "pics" %>
   <% end %>
 
-  <% if current_page == "pages-venue" %>
-	<span class="current">VENUE</span>
-  <% else %>
-	<%= link_to "VENUE", :controller => "pages", :action => "venue" %>
-  <% end %>
-	
   <% if current_page == "pages-agenda" %>
 	<span class="current">AGENDA</span>
   <% else %>

@@ -60,10 +60,9 @@ Agilencr2011::Application.routes.draw do
 	root :to => "home#index"
 
 	get "pages/about"
-	get "pages/venue"
 	get "pages/contact_us"
 	get "pages/agenda"
-	get "pages/register"
+	get "pages/pics"
 
 	get "details/bharti"
 	get "details/shaik"

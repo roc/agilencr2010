@@ -330,7 +330,7 @@ a.signup_btn:hover {
 	line-height:20px;
 }
 .speakers_call_h1 {
-	margin-top:30px;
+	margin-top:2px;
 	font-size:18px;
 	color: #ff9c00;
 	background:url(../images/blue_bars.gif);
@@ -342,9 +342,8 @@ a.signup_btn:hover {
 .speakers_call {
 	float:left;
 	width:425px;
-	height: 400px;
+	height: 800px;
 	margin-top:10px;
-	overflow-y: scroll;
 }
 .speakers_call {
 }
